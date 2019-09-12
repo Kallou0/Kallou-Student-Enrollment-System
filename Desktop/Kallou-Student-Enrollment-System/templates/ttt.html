@@ -1,0 +1,81 @@
+{% extends "stud.html" %}
+{% block body %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>student record</title>
+
+<lin rel ='stylesheet' href="/home/niyas/New Folder/main.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+  
+<!-- Wrap all page content here -->
+<div id="wrap">
+  <div  style="background:url('../static/img/index.png') ;width: 100%;height: 100%">
+  <!-- Fixed navbar -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav top-nav-nav">
+                    <li class="active">
+                        <a href="/"><i class="fa fa-fw fa-dashboard"></i><p3> Home</p3></a>
+                    </li>
+                     <li>
+                     <a href="/sef"><i class="fa fa-fw fa-table"></i>Search Student</a>   
+                    </li>
+                    <li>
+                     <a href="/stud"><i class="fa fa-fw fa-table"></i>Register Student</a>   
+                    </li>
+                    <li>
+                     <a href="/del"><i class="fa fa-fw fa-table"></i>Delete Student</a>   
+                    </li>
+                
+                        
+                </ul>
+            </div>
+            <div align='center'>
+<h1>STUDENT RECORDS</h1>
+{%for a,b,c,d,e in row%}
+
+<style>
+     table.equalDevide tr td { width:25%; }
+</style>
+<div align ='center'>
+<table class="equalDevide" cellpadding="1" cellspacing="0" width="70%" border="2px">
+<th>
+<tr>
+<td><strong>NAME:</strong>{{a}}</td>
+
+<td><strong>REG NUM:</strong>{{b}}</td>
+
+
+<td><strong>ID NUM:</strong>{{c}}</td>
+
+
+<td><strong>ENROLLMENT YEAR:</strong>{{d}}</td>
+
+<td><strong>COURSE:</strong>{{e}}</td>
+</tr>
+</th>
+</table>
+</div>
+
+
+</div>
+</div>
+</div>
+
+{% endfor %}
+
+    </div>
+  </div>
+ 
+
+
+{% endblock %}
+ 
+</body>
+</html>
+
+

@@ -1,0 +1,68 @@
+{% block head %}
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <link href="../static/css/custom.css" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='/static/images/favicon.ico' />
+{% endblock %}
+<body style="padding: 0 " >
+ <div  style="background:url('../static/img/index.png') ;width: 100%;height: 100%">
+ <div class="hero-image-content">
+ <div class="container">
+
+<!-- Form Section -->
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav top-nav-nav">
+                    <li class="active">
+                        <a href="/"><i class="fa fa-fw fa-dashboard"></i><p3> Home</p3></a>
+                    <li><a href="/rec">view student records</a></li>
+                    <li><a href="/sef">search student</a></li>
+                    
+                    <li><a href="/del">delete student</a></li> 
+                    <li><a href="/cos">view courses</a></li>
+                
+                        
+                </ul>
+            </div>
+<div class="alert alert-info" role="alert">
+    <h2> <strong>You can register new students here</strong> </h2> 
+</div>
+        <hr class="star-dark mb-5">
+    
+
+</div>
+        <div class = 'container'>
+<div align ='center'>  
+<FORM method="post" action="/add">
+ <div id = "container">
+ <div align = "center">
+ <H1>Student details</H1>
+
+ <BR>NAME: <INPUT TYPE="text" NAME="name" ></BR>
+ <BR>REG NUM: <INPUT TYPE="text" NAME="reg_num" ></BR>
+
+ <BR>ID NUM<INPUT TYPE="text" NAME="id_num" ><BR>
+
+ <br>ENROLLMENT YEAR:<INPUT TYPE="text" NAME="year"></br>
+
+ <BR>COURSE:<INPUT TYPE="text" NAME="course" ></BR>
+
+ <INPUT TYPE="submit">
+</div>
+ </div>
+ </FORM>
+
+  </div>
+      </div>
+    </div><!-- /.container -->
+
+                    </div><!-- /.hero-image-content -->
+
+                </div><!-- /.hero-image-inner -->
+            </div><!-- /.hero-image -->
+</body>

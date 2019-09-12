@@ -1,0 +1,7 @@
+Student enrollment system is a project  that was developed in python for registering, viewing, searching and removing styudents and courses from a college or university system.
+
+I used flask framework for developing my Web App
+
+I used SQLite database and opened a database 'sample.db' with 2 tables 'students' and 'courses' for students and courses records respectively.
+
+To run the project, you first open the virtual environment and then run the command 'python app.py'

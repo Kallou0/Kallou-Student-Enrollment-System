@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="https://bootswatch.com/3/paper/bootstrap.css" media="screen">
+  <link rel='stylesheet' href='style.css' type='text/css' media='all' />
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-6" style="height:200px " id="bar1"></div>
+    <div class="col-md-6" style="height:200px" id="bar2"></div>
+  </div>
+</body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script src="bar.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $.get("http://localhost:5000/2d?x=region&y=profit", function (gdata, status) {
+    bar("#bar1", JSON.parse(gdata), "Date", "Profit")
+  });
+  $.get("http://localhost:5000/2d?x=date&y=margin", function (gdata, status) {
+    bar("#bar2", JSON.parse(gdata), "Date", "Margin")
+  });
+</script>

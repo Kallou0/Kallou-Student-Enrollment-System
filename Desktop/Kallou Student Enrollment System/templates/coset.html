@@ -1,0 +1,138 @@
+{% block head %}
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <link href="../static/css/custom.css" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='/static/images/favicon.ico' />
+{% endblock %}
+<body style="padding: 0 " >
+ <div  style="background:url('../static/img/index.png') ;width: 100%;height: 100%">
+ <div class="hero-image-content">
+ <div class="container">
+
+<!-- Form Section -->
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav top-nav-nav">
+                    <li class="active">
+                        <a href="/"><i class="fa fa-fw fa-dashboard"></i><p3> Home</p3></a>
+                    <li><a href="/cos">View Course</a></li>
+                    <li><a href="/dlt">Delete Course</a></li> 
+                    <li><a href="/stud">Register Student</a></li>
+                
+                        
+                </ul>
+            </div>
+<div class="alert alert-info" role="alert">
+    <h2> <strong>You can add new courses to the system here</strong> </h2> 
+</div>
+        <hr class="star-dark mb-5">
+    
+
+</div>
+        <div class = 'container'>
+<div align ='center'>  
+<FORM method="post" action="/addc">
+ <div id = "container">
+ <div align = "center">
+ <H1>Course details</H1>
+
+ <BR>COURSE NAME: <INPUT TYPE="text" NAME="course_name" ></BR>
+ <BR>ABBREVIATION: <INPUT TYPE="text" NAME="abrv" ></BR>
+
+
+ <INPUT TYPE="submit">
+</div>
+ </div>
+ </FORM>
+
+  </div>
+      </div>
+    </div><!-- /.container -->
+
+                    </div><!-- /.hero-image-content -->
+
+                </div><!-- /.hero-image-inner -->
+            </div><!-- /.hero-image -->
+</body>
+{% block body %}
+<HEAD>
+ <TITLE> <b>Student details</b> </TITLE>
+ 
+
+<lin rel ='stylesheet' href="stylesheet/main.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+ </HEAD>     
+
+ <BODY>
+ <!-- Wrap all page content here -->
+<div id="wrap">
+  
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default" data-spy="affix" data-offset-top="60" data-offset-bottom="70" id="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Student Record</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/"><i class="fa fa-fw fa-dashboard"></i><h2> Home</h2></a></li>
+          <li><a href="/cos">View Course</a></li>
+          <li><a href="/del">Delete Course</a></li> 
+          <li><a href="/stud">Register Student</a></li>         
+           
+
+            </ul>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  
+  
+ <FORM method="post" action="/addc">
+ <div id = "container">
+ <div align = "center">
+ <H1>Course details</H1>
+
+ <BR>COURSE NAME: <INPUT TYPE="text" NAME="course_name" ></BR>
+ <BR>ABBREVIATION: <INPUT TYPE="text" NAME="abrv" ></BR>
+
+ <INPUT TYPE="submit">
+</div>
+ </div>
+ </FORM>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+ <script text="javascript">
+document.body.style.backgroundImage="url('static/images.jpeg')";
+ </script>
+
+ </BODY>
+
+ </HTML>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+

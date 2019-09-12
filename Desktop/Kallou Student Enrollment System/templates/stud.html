@@ -1,0 +1,86 @@
+
+{% block body %}
+<HEAD>
+ <TITLE> <b>Student details</b> </TITLE>
+ 
+
+<lin rel ='stylesheet' href="stylesheet/main.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+ </HEAD>     
+
+ <BODY>
+ <!-- Wrap all page content here -->
+<div id="wrap">
+  
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default" data-spy="affix" data-offset-top="60" data-offset-bottom="70" id="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Student Record</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/"><i class="fa fa-fw fa-dashboard"></i><h2> Home</h2></a></li>
+          <li><a href="/rec">view student records</a></li>
+          <li><a href="/sef">search student</a></li>
+          <li><a href="/stud">register student</a></li>
+          <li><a href="/del">delete student</a></li> 
+           <li><a href="/cos">view courses</a></li>         
+           
+
+            </ul>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  
+  
+ <FORM method="post" action="/add">
+ <div id = "container">
+ <div align = "center">
+ <H1>Student details</H1>
+
+ <BR>NAME: <INPUT TYPE="text" NAME="name" ></BR>
+ <BR>REG NUM: <INPUT TYPE="text" NAME="reg_num" ></BR>
+
+ <BR>ID NUM<INPUT TYPE="text" NAME="id_num" ><BR>
+
+ <br>ENROLLMENT YEAR:<INPUT TYPE="text" NAME="year"></br>
+
+ <BR>COURSE:<INPUT TYPE="text" NAME="course" ></BR>
+
+ <INPUT TYPE="submit">
+</div>
+ </div>
+ </FORM>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+ <script text="javascript">
+document.body.style.backgroundImage="url('static/images.jpeg')";
+ </script>
+
+ </BODY>
+
+ </HTML>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
